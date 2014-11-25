@@ -19,7 +19,9 @@ change the document-root in
 server.document-root        = "/srv/www"
 
 echo "deb https://vmh.dyndns.info/my-ubuntu/ wheezy main" > /etc/apt/sources.list.d/my-rasp.list
+
 wget --no-check-certificate https://vmh.dyndns.info/my-ubuntu/pubring.gpg
+
 apt-key add pubring.gpg
 
 apt-get update
