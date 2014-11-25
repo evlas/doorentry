@@ -16,6 +16,7 @@ lighty-enable-mod fastcgi
 lighty-enable-mod fastcgi-php
 
 change the document-root in lighttpd.conf
+
 server.document-root        = "/srv/www"
 
 echo "deb https://vmh.dyndns.info/my-ubuntu/ wheezy main" > /etc/apt/sources.list.d/my-rasp.list
