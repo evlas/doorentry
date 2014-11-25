@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+case $1 in
+start)
+    linphonecsh init -C 
+    sleep 2
+    linphonecsh generic 'autoanswer enable'
+;;
+stop)
+    linphonecsh exit
+;;
+status)
+    linphonecsh status register
+    sleep 2
+    linphonecsh status autoanswer
+    sleep 2
+    linphonecsh status hook
+;;
+esac
